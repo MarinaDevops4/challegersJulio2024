@@ -1,6 +1,6 @@
-```markdown
+
 # Tarea de Desarrollo: Creación de una Aplicación de Tarjetas de Personajes
-![alt text](image.png)
+![alt text](image.png)  
 
 ## Objetivo
 Desarrollar una aplicación sencilla que recoja datos de personajes desde una API externa y los muestre en formato de tarjetas estilo juego. Este proyecto está diseñado para que un desarrollador principiante lo complete en aproximadamente 1-2 horas.
@@ -74,5 +74,5 @@ Desarrollar una aplicación sencilla que recoja datos de personajes desde una AP
 - [Documentación de Requests](https://docs.python-requests.org/en/latest/) (si usas Python)
 
 ¡Buena suerte y disfruta del proceso de desarrollo!
-```
+
 
