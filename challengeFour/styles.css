@@ -1,0 +1,201 @@
+/* Estilos globales */
+body {
+    background-color: #1a1a1a;
+    color: #eaeaea;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Oculta el scroll si es necesario */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Contenedor del juego */
+.game-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    max-height: 800px; /* Ajusta este valor según sea necesario */
+    padding: 10px;
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Oculta el contenido que desborda */
+}
+
+/* Tablero */
+.board {
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 80px); /* Ajusta el espacio para los controles */
+    align-items: center;
+}
+
+/* Manos del jugador y oponente */
+.opponent-hand, .player-hand {
+    border: 2px solid #444;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    width: 25%; /* Ajusta el ancho según sea necesario */
+}
+
+/* Área de juego */
+.play-area {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #555;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #222;
+    margin: 0 10px;
+    flex: 1;
+}
+
+/* Zona de juego */
+.play-zone {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #777;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cartas */
+.cards {
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+    padding: 5px;
+    height: 100%; /* Ajusta el tamaño de las cartas */
+    align-items: center;
+}
+
+.card {
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 10px;
+    width: 100px; /* Ajusta el tamaño de las cartas según sea necesario */
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffd700;
+}
+
+.card-stats {
+    font-size: 12px;
+    color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #555;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Controles */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+    background-color: #ff6347;
+}
+
+/* Mensaje de resultado */
+#result-message {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none; /* Ocultamos el modal por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Fondo negro semi-transparente */
+}
+
+.modal-content {
+    background-color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    color: #ffd700;
+    text-align: center;
+}
+
+.modal-close {
+    color: #ffd700;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #ff6347;
+}
