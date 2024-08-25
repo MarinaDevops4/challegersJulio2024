@@ -1,6 +1,6 @@
 # Reto de Programación: Juego de Cartas con API YGOProDeck
 
-bg.webp
+![Texto alternativo](bg.webp)
 
 ¡Bienvenido al reto de programación! En este desafío, vas a construir un emocionante juego de cartas utilizando la [API YGOProDeck](https://ygoprodeck.com/api-guide/). Tu objetivo será crear un juego de cartas 1 contra 1 donde te enfrentarás a un oponente controlado por una función aleatoria.
 
