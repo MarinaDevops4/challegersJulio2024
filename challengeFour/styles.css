@@ -1,4 +1,22 @@
 /* Estilos globales */
+   /* Estilos para el alert sticky */
+   .alert-sticky {
+    position: -webkit-sticky; /* Para navegadores WebKit */
+    position: sticky;
+    top: 0;
+    background-color: #ffcc00; /* Color de fondo */
+    color: #000; /* Color del texto */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1000; /* Asegura que el alert esté por encima de otros elementos */
+}
+
+/* Estilos opcionales para mejorar la apariencia */
+.alert-sticky a {
+    color: #000;
+    text-decoration: underline;
+}
 body {
     background-color: #1a1a1a;
     color: #eaeaea;
