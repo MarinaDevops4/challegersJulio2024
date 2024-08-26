@@ -7,7 +7,7 @@
 ## Descripción del Reto
 
 **Juego de Cartas 1 contra 1**  
-Tu tarea es desarrollar un juego de cartas en el que el jugador humano compita contra un oponente controlado por una función de IA simple. El oponente tomará decisiones al azar, lo que permitirá que el juego sea desafiante pero impredecible.
+Tu tarea es desarrollar un juego de cartas en el que el jugador humano compita contra un oponente controlado por una función randomize o cualquier otro método que se te ocurra. El oponente tomará decisiones al azar, lo que permitirá que el juego sea desafiante pero impredecible.
 
 ### Funcionalidades Clave
 
@@ -32,7 +32,7 @@ Tu tarea es desarrollar un juego de cartas en el que el jugador humano compita c
   Asegúrate de que el juego siga las reglas básicas de un juego de cartas típico. Puedes basarte en un juego de cartas existente o diseñar tus propias reglas, siempre que sean claras y se puedan seguir durante la partida.
 
 - **Funcionalidad Aleatoria**  
-  La IA del oponente debe ser lo suficientemente básica para que tome decisiones aleatorias, pero también debe seguir las reglas del juego y hacer movimientos válidos.
+ El oponente debe tomar decisiones aleatorias, pero también debe seguir las reglas del juego y hacer movimientos válidos.
 
 ### Recursos
 
